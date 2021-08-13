@@ -31,6 +31,10 @@ class User extends Model {
    *
    * @return {Object}
    */
+  addresess () {
+    return this.hasMany('App/Models/UserAddress')
+  }
+
   tokens () {
     return this.hasMany('App/Models/Token')
   }
